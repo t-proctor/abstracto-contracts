@@ -1,0 +1,750 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entryPoint",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "NAME",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "VERSION",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "domainSeparator",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "safe",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "callData",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nonce",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "verificationGas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "preVerificationGas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxFeePerGas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxPriorityFeePerGas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "callGas",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "entryPoint",
+						"type": "address"
+					}
+				],
+				"name": "encodeOperationData",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "expectedExecutionFunctionId",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "message",
+						"type": "bytes"
+					}
+				],
+				"name": "getMessageHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract Safe",
+						"name": "safe",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "message",
+						"type": "bytes"
+					}
+				],
+				"name": "getMessageHashForSafe",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getModules",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_dataHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "isValidSignature",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "isValidSignature",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC1155BatchReceived",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC1155Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "targetContract",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "calldataPayload",
+						"type": "bytes"
+					}
+				],
+				"name": "simulate",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "response",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "supportedEntryPoint",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportedExecutionFunctionIds",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "tokensReceived",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "sender",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "nonce",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "initCode",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "callData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint256",
+								"name": "callGasLimit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "verificationGasLimit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "preVerificationGas",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxFeePerGas",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxPriorityFeePerGas",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "paymasterAndData",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bytes",
+								"name": "signature",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct UserOperation",
+						"name": "userOp",
+						"type": "tuple"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "requiredPrefund",
+						"type": "uint256"
+					}
+				],
+				"name": "validateUserOp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"encodeOperationData(address,bytes,uint256,uint256,uint256,uint256,uint256,uint256,address)": {
+					"details": "Returns the bytes that are hashed to be signed by owners.",
+					"params": {
+						"callData": "Call data",
+						"callGas": "Gas available during the execution of the call",
+						"entryPoint": "Address of the entry point",
+						"maxFeePerGas": "Max fee per gas",
+						"maxPriorityFeePerGas": "Max priority fee per gas",
+						"nonce": "Nonce of the operation",
+						"preVerificationGas": "Gas required for pre-verification (e.g. for EOA signature verification)",
+						"safe": "Safe address",
+						"verificationGas": "Gas required for verification"
+					},
+					"returns": {
+						"_0": "Operation hash bytes"
+					}
+				},
+				"getMessageHash(bytes)": {
+					"details": "Returns hash of a message that can be signed by owners.",
+					"params": {
+						"message": "Message that should be hashed"
+					},
+					"returns": {
+						"_0": "Message hash."
+					}
+				},
+				"getMessageHashForSafe(address,bytes)": {
+					"details": "Returns hash of a message that can be signed by owners.",
+					"params": {
+						"message": "Message that should be hashed",
+						"safe": "Safe to which the message is targeted"
+					},
+					"returns": {
+						"_0": "Message hash."
+					}
+				},
+				"getModules()": {
+					"details": "Returns array of first 10 modules.",
+					"returns": {
+						"_0": "Array of modules."
+					}
+				},
+				"isValidSignature(bytes,bytes)": {
+					"details": "Should return whether the signature provided is valid for the provided data.",
+					"params": {
+						"_data": "Arbitrary length data signed on the behalf of address(msg.sender)",
+						"_signature": "Signature byte array associated with _data"
+					},
+					"returns": {
+						"_0": "a bool upon valid or invalid signature with corresponding _data"
+					}
+				},
+				"isValidSignature(bytes32,bytes)": {
+					"details": "Should return whether the signature provided is valid for the provided data.       The save does not implement the interface since `checkSignatures` is not a view method.       The method will not perform any state changes (see parameters of `checkSignatures`)",
+					"params": {
+						"_dataHash": "Hash of the data signed on the behalf of address(msg.sender)",
+						"_signature": "Signature byte array associated with _dataHash"
+					},
+					"returns": {
+						"_0": "a bool upon valid or invalid signature with corresponding _dataHash"
+					}
+				},
+				"simulate(address,bytes)": {
+					"details": "Performs a delegetecall on a targetContract in the context of self. Internally reverts execution to avoid side effects (making it static). Catches revert and returns encoded result as bytes.",
+					"params": {
+						"calldataPayload": "Calldata that should be sent to the target contract (encoded method name and arguments).",
+						"targetContract": "Address of the contract containing the code to execute."
+					}
+				},
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+				},
+				"validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes),bytes32,uint256)": {
+					"details": "Validates user operation provided by the entry point",
+					"params": {
+						"requiredPrefund": "Required prefund to execute the operation",
+						"userOp": "User operation struct"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"isValidSignature(bytes,bytes)": {
+					"notice": "Implementation of ISignatureValidator (see `interfaces/ISignatureValidator.sol`)"
+				},
+				"isValidSignature(bytes32,bytes)": {
+					"notice": "Implementation of updated EIP-1271See https://github.com/gnosis/util-contracts/blob/bb5fe5fb5df6d8400998094fb1b32a178a47c3a1/contracts/StorageAccessible.sol"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"eip4337-diatomic-alternative_impl_richard/contracts/EIP4337Module.sol": "Simple4337Module"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@gnosis.pm/safe-contracts/contracts/handler/DefaultCallbackHandler.sol": {
+			"keccak256": "0x1cdc184c3504176383b7f94f9ce06c96ce1c123e1878258fe6dc03cce4a29ff7",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://402f4bb84fa6276107aa212f859a3464d553294a3fbca16ad2153ec08d009f5d",
+				"dweb:/ipfs/QmQUktVgr9TiU32c6w5M2grBFHsJZJd7HuryrPGYbBHfqP"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/handler/HandlerContext.sol": {
+			"keccak256": "0x1e30ae950820820e4c5730533c23102e2edb869d6033f542471e8bf99729df08",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://8edf229566d71b90488fdd3e03dbdef5c37aa4ea59038ed1c12682bf27be9883",
+				"dweb:/ipfs/QmY25p3Zv9KF3bs32NDoJ2NgFhZpoXubzAirjXzMVk4B6L"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/interfaces/ERC1155TokenReceiver.sol": {
+			"keccak256": "0x7894ef55ee3334f6388e5e1d749bbabd85fc03d5a2ab949f284bce830f8aa398",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://479fc8aef32fb1a5dcc7cbfbdb78f7e8af5019f1030c6d0973d0ea2f5d7f3761",
+				"dweb:/ipfs/QmaD4MayiJCbnGxj49gi1Qmbr4PHEAdzBMm95AwcyVxBLp"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/interfaces/ERC721TokenReceiver.sol": {
+			"keccak256": "0x8a3dd41df3a49d9ae2d45dd4087ca595946ed3c6051b8aa304727017b5eabaa4",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://718d0200f6aa33e344bd8dab5634c63dbf6e5de7002d343da85b563261c1d332",
+				"dweb:/ipfs/QmUof1aRjFLP837aKuNdHb3fkmDC7zd4Vd6Je9psEzhSAh"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/interfaces/ERC777TokensRecipient.sol": {
+			"keccak256": "0x1cfbdb95761067c5bc35599fcae6c11e487f2879d7fa2c6f47e7b94506b4039c",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://3df3d36d75868cf557eefa325fe9857fb12b817feb710d47e8cd997582005014",
+				"dweb:/ipfs/QmUE5bYfjChdtvohnm3eDQXYK759KLZsS1GDWLgRidfHsw"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/interfaces/IERC165.sol": {
+			"keccak256": "0x5c64c2e071245db8fe3ea8b94f73c5a8de236933858ae240348d502433a9d178",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://46a7796e0c5c451b86038253d488ffb0986472d17d0fb74e00c3809682f2fd7a",
+				"dweb:/ipfs/QmX7tYoCRrCLGqsZSHXgdcqbRhMGXpS6ezckaFjaiULd3e"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol": {
+			"keccak256": "0x5b6e9bf17f28738ce88e751f420b0559f5151ba7bec2ff3c7bb31e42673d6801",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://bfdde8390deb619e38f98be67c5f9d26f12623855540af76b9f454142d3896c1",
+				"dweb:/ipfs/QmZrr1ocToR5S62W177qV2csfs7wCQNs3t9vatyx32uLXz"
+			]
+		},
+		"eip4337-diatomic-alternative_impl_richard/contracts/EIP4337Module.sol": {
+			"keccak256": "0x2831147592ea753704533e999475afff9b8227388f0a62787f4d2302894f3c83",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://619cadecf906c82730ace434d666187f783a38aa55f7bf80ebee459db31274d5",
+				"dweb:/ipfs/QmWYCzFYAX3FJ91ohCN4jcWdKk5fvMiL2FK2oUd9piXw1o"
+			]
+		},
+		"eip4337-diatomic-alternative_impl_richard/contracts/UserOperation.sol": {
+			"keccak256": "0x53dc93173b959178b09eed2eee893a9ccf493f96c2fb5aeba9db3bd3b63c31b1",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9364b9fa3413a6fc6f03b6fad3d73ab8fe642b607b4d8babc121820e8750ad41",
+				"dweb:/ipfs/Qmd1xeuyMU4hBg3yiXyxfsRBStjcTpmAWmSf8h3X2JjzTg"
+			]
+		},
+		"eip4337-diatomic-alternative_impl_richard/contracts/interfaces/Safe.sol": {
+			"keccak256": "0x8ade24dbe92e5cd89f0c919690e11f118a3974695cbc17b5f3bfb8badbefb72c",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://41edd3726b48772ef9c48b87d0bbf927c32a506ef441dfb77d8f0bbb2ffba202",
+				"dweb:/ipfs/QmbDociPKr2xsb7W5zej5D6ayKQr6DpgWvkXmwgzbbCLe8"
+			]
+		},
+		"eip4337-diatomic-alternative_impl_richard/contracts/vendor/CompatibilityFallbackHandler.sol": {
+			"keccak256": "0x0dcdf86ec469673ac4dea5f350e71b93127b0013196cb90f8d63f818efa3fd5b",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://8dfc5f07a9fbc05750d6871f508483b68bf740ca86332a921f4ecb76b912e9a3",
+				"dweb:/ipfs/QmTi1SwC4mTkPt53akjXwVv1dABmUQNfKTq1Hyf8mxfw2R"
+			]
+		}
+	},
+	"version": 1
+}
